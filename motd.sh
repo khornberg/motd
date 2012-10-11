@@ -9,12 +9,13 @@ function getContentFromBiblegateway ()
   # curl the verse of the day
   # suppress output
   # wait 10 seconds for timeout
-  # output the to the current directory
+  # output the rss file to the project directory 
   # wait for curl to complete before continuing in the script
   curl -s --connect-timeout 10 -o ~/Projects/motd/votd http://www.biblegateway.com/votd/get/?format=atom&version=ESV
   wait
 }
 
+# Pass rss file through sed to get the message and verse reference
 function sendToScript ()
 {
   message=`sed -n '/&ldquo;.*&/ p' ~/Projects/motd/votd`
