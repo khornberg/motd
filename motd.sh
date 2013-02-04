@@ -13,7 +13,7 @@ function getContentFromBiblegateway ()
   # wait 10 seconds for timeout
   # output the rss file to the project directory 
   # wait for curl to complete before continuing in the script
-  curl -s --connect-timeout 10 -o $votd_directory http://www.biblegateway.com/votd/get/?format=atom&version=ESV
+  curl -s --connect-timeout 10 -o $DIR/votd http://www.biblegateway.com/votd/get/?format=atom&version=ESV
   wait
 }
 
