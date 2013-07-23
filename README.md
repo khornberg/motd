@@ -6,10 +6,12 @@ Message of the Day
 Runs when you open your terminal or start bash and displays the daily verse of
 the day from BibleGateway.com.
 
-    Verse of the Day: Rejoice with those who rejoice; mourn with those who
+````
+Verse of the Day: Rejoice with those who rejoice; mourn with those who
 mourn.
-    Romans 12:15
-    ~/motd$
+  Romans 12:15
+~/motd$
+````
  
 Add the call to run motd.sh from your current rc file.
 
